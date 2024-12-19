@@ -14,6 +14,13 @@ public class Calculadora{
             case '+':
                 resultado = num1 + num2;
                 break;
+            case '/':
+                if (num2 == 0) {
+                    System.out.println("Error: División entre cero");
+                } else {
+                    resultado = num1 / num2;
+                }
+                break;
             default:
                 System.out.println("Operador inválido");
             return;
